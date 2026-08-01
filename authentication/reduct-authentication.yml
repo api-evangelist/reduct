@@ -1,0 +1,23 @@
+generated: '2026-07-21'
+method: searched
+source: https://help.reduct.video/en/articles/api-access
+docs: https://help.reduct.video/en/articles/api-access
+summary:
+  types: [apiKey]
+  api_key_in: [header]
+  oauth2_flows: []
+  notes: >-
+    Reduct exposes a RESTful API (current version 3) providing broad access
+    across a workspace. Access is limited to workspaces on the Professional or
+    Enterprise plan. Authentication is by API key: keys are generated and
+    managed by an authenticated user through the Reduct "backstage" interface;
+    the full API reference is available only after logging in, so the exact
+    header name and key format are not published on the public docs surface.
+schemes:
+- name: apiKey
+  type: apiKey
+  in: header
+  description: >-
+    Per-workspace API key created via the backstage interface. Presented on API
+    requests to authenticate. Available on Professional and Enterprise plans.
+  sources: [https://help.reduct.video/en/articles/api-access]

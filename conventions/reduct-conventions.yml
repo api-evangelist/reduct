@@ -1,0 +1,41 @@
+generated: '2026-07-21'
+method: searched
+source: https://help.reduct.video/en/articles/api-access
+docs: https://help.reduct.video/en/articles/api-access
+summary: >-
+  Cross-cutting semantics for the Reduct REST API (v3). Captured from the public
+  API-access help article; the full reference (fields, headers, error envelope)
+  is behind login, so only publicly documented conventions are recorded here.
+conventions:
+  architecture: REST
+  authentication:
+    style: api-key
+    location: header
+    ref: authentication/reduct-authentication.yml
+  versioning:
+    scheme: version-number
+    current: '3'
+    notes: >-
+      The API is documented as "current version 3". Versioning/deprecation
+      policy and Sunset/Deprecation header support are not published on the
+      public docs surface.
+  resources:
+    - projects
+    - recordings
+    - media
+    - redactions
+    - redaction-motions
+    - highlights
+    - comments
+    - reels
+    - blocks
+  idempotency:
+    supported: unknown
+    notes: No idempotency-key contract is documented on the public API surface.
+  pagination:
+    style: unknown
+    notes: Not documented publicly.
+  rate_limiting:
+    documented: false
+  error_envelope:
+    documented: false

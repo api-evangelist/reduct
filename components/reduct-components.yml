@@ -1,0 +1,18 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/reduct-inc/reduct-wordpress-plugin
+components:
+- family: embed
+  name: Reduct WordPress plugin
+  description: >-
+    First-party WordPress plugin to embed Reduct Share URLs (published reels /
+    shared videos) directly in WordPress sites.
+  repo: https://github.com/reduct-inc/reduct-wordpress-plugin
+  language: php
+  official: true
+- family: embed
+  name: Reduct Share URL embed
+  description: >-
+    Published reels are shared via Reduct Share URLs that can be embedded in
+    external sites/pages.
+  official: true

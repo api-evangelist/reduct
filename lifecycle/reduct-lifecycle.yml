@@ -1,0 +1,17 @@
+generated: '2026-07-21'
+method: searched
+source: https://help.reduct.video/en/articles/api-access
+versioning:
+  scheme: version-number
+  current: '3'
+  docs: https://help.reduct.video/en/articles/api-access
+deprecation:
+  policy_url: null
+  sunset_header: unknown
+sla:
+  url: null
+  uptime_target: null
+status_page: https://status.reduct.video/
+status_page_platform: Upptime
+status_page_source: https://github.com/reduct-inc/reduct-status
+deprecated_operations: []

@@ -1,0 +1,22 @@
+# Reduct
+
+> Reduct is a video intelligence platform that transcribes, translates, redacts, searches, annotates, and edits audio and video using a text-based editor. Reduct exposes a RESTful API (v3) giving broad programmatic access across a workspace — projects, recordings, media, transcripts, redactions, highlights, comments, and reels — on Professional and Enterprise plans.
+
+## API
+
+- [API access guide](https://help.reduct.video/en/articles/api-access): Overview of the RESTful API (v3), supported objects, and how to generate API keys via the backstage interface (Professional/Enterprise plans).
+- Authentication: per-workspace API key, presented in a request header. See authentication/reduct-authentication.yml.
+
+## Docs
+
+- [Help Center](https://help.reduct.video/): Product and admin documentation.
+- [Quick Start Guide](https://help.reduct.video/en/articles/quick-start-guide): Projects, uploads, highlighting, searching transcripts, videoboards, reels, and sharing.
+- [Pricing](https://reduct.video/pricing): Plans; API access included on Professional and above.
+- [Security](https://reduct.video/security): SOC 2 Type II, GDPR, HIPAA, encryption and audit-logging posture.
+- [Blog](https://reduct.video/blog): Product and industry articles.
+- [Status](https://status.reduct.video/): Upptime service status page.
+
+## Repos
+
+- [GitHub org (reduct-inc)](https://github.com/reduct-inc): Public repos including the WordPress embed plugin and the status page.
+- [WordPress plugin](https://github.com/reduct-inc/reduct-wordpress-plugin): Embed Reduct Share URLs in WordPress sites.

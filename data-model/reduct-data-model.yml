@@ -1,0 +1,61 @@
+generated: '2026-07-21'
+method: searched
+source: https://help.reduct.video/en/articles/api-access
+note: >-
+  Entity graph reconstructed from the object model documented in the Reduct API
+  help article (no public OpenAPI). Entities are as published; relationships
+  marked derived are inferred conservatively from the documented wording (e.g.
+  "redactions and associated redaction motions", "blocks/strikethroughs/comments
+  within reels", "languages associated with recordings").
+entities:
+- name: project
+  description: Top-level container for work in a workspace.
+- name: recording
+  description: An uploaded/imported audio or video item with a transcript.
+- name: media
+  description: Underlying media file for a recording (upload/import).
+- name: redaction
+  description: A redaction applied to a recording.
+- name: redaction_motion
+  description: Motion associated with a redaction.
+- name: highlight
+  description: A saved highlight within a recording/transcript.
+- name: comment
+  description: A comment on a recording or reel.
+- name: reel
+  description: An assembled reel; can be published/unpublished.
+- name: block
+  description: A block (or strikethrough/comment) within a reel.
+- name: language
+  description: A language associated with a recording.
+relationships:
+- from: recording
+  to: media
+  type: has_one
+  via: media
+  confidence: derived
+- from: recording
+  to: highlight
+  type: has_many
+  via: recording
+  confidence: derived
+- from: recording
+  to: language
+  type: has_many
+  via: recording
+  confidence: searched
+- from: redaction
+  to: redaction_motion
+  type: has_many
+  via: redaction
+  confidence: searched
+- from: recording
+  to: redaction
+  type: has_many
+  via: recording
+  confidence: derived
+- from: reel
+  to: block
+  type: has_many
+  via: reel
+  confidence: searched

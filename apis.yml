@@ -1,8 +1,28 @@
 aid: reduct
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/reduct.png
 name: Reduct
-description: 'Reduct is a company surfaced as a portfolio company of greylock and added to the API Evangelist
-  network as a stub for enrichment. Sector: applications. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: >-
+  Reduct (reduct.video) is a video intelligence platform that transcribes,
+  translates, redacts, searches, annotates, and edits audio and video through a
+  text-based editor. Teams in legal, qualitative research, film and production,
+  marketing, and education use it to find and share what matters across hours of
+  footage. Reduct exposes a RESTful API (current version 3) giving broad
+  programmatic access across a workspace — projects, recordings, media,
+  transcripts, redactions and redaction motions, highlights, comments, and reels
+  — with per-workspace API-key authentication on the Professional and Enterprise
+  plans. The company is SOC 2 Type II certified with GDPR and HIPAA support.
 url: https://raw.githubusercontent.com/api-evangelist/reduct/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,11 +32,37 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Applications
-apis: []
+- Video
+- Transcription
+- Translation
+- Redaction
+- Video Editing
+- Media
+- Artificial Intelligence
+apis:
+- name: Reduct API
+  description: >-
+    RESTful API (version 3) providing broad access across a Reduct workspace:
+    projects, recordings, media, redactions and redaction motions, highlights,
+    comments, and reels, plus transcript retrieval, transcription status, media
+    upload/import, reel publish/unpublish, recording languages, and workspace
+    member access levels. Authenticated with a per-workspace API key generated
+    via the backstage interface. Available on Professional and Enterprise plans.
+  humanURL: https://help.reduct.video/en/articles/api-access
+  baseURL: https://app.reduct.video
+  tags:
+  - Video
+  - Transcription
+  - Redaction
+  properties:
+  - type: APIReference
+    url: https://help.reduct.video/en/articles/api-access
+  - type: Authentication
+    url: authentication/reduct-authentication.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -25,3 +71,52 @@ maintainers:
 common:
 - type: Website
   url: https://reduct.video/
+- type: DeveloperPortal
+  url: https://help.reduct.video/
+- type: Documentation
+  url: https://help.reduct.video/
+- type: APIReference
+  url: https://help.reduct.video/en/articles/api-access
+- type: GettingStarted
+  url: https://help.reduct.video/en/articles/quick-start-guide
+- type: Support
+  url: https://help.reduct.video/
+- type: Blog
+  url: https://reduct.video/blog
+- type: GitHubOrganization
+  url: https://github.com/reduct-inc
+- type: Pricing
+  url: https://reduct.video/pricing
+- type: Login
+  url: https://app.reduct.video/
+- type: TermsOfService
+  url: https://reduct.video/terms
+- type: PrivacyPolicy
+  url: https://reduct.video/privacy-policy
+- type: StatusPage
+  url: https://status.reduct.video/
+- type: Compliance
+  url: https://reduct.video/security
+- type: TrustCenter
+  url: security/reduct-trust-center.yml
+- type: Conformance
+  url: conformance/reduct-conformance.yml
+- type: Authentication
+  url: authentication/reduct-authentication.yml
+- type: Conventions
+  url: conventions/reduct-conventions.yml
+- type: Lifecycle
+  url: lifecycle/reduct-lifecycle.yml
+- type: DataModel
+  url: data-model/reduct-data-model.yml
+- type: Components
+  url: components/reduct-components.yml
+- type: LLMsTxt
+  url: llms/reduct-llms.txt
+- type: DomainSecurity
+  url: security/reduct-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 9
+  pass: local-v1

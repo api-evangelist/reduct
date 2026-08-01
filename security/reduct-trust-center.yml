@@ -1,0 +1,25 @@
+generated: '2026-07-21'
+method: searched
+source: https://reduct.video/security
+url: https://reduct.video/security
+certifications:
+- SOC 2 Type II
+- GDPR
+- HIPAA
+compliance_notes: >-
+  SOC 2 Type II certified (independent third-party audits, continuous
+  monitoring). Designed to be GDPR compliant with DPAs for EU organizations;
+  CCPA support. HIPAA-compliant AI and human transcription with BAAs available.
+  Infrastructure on Google Cloud Platform (SOC 1/2/3, ISO 27001, HIPAA).
+security_features:
+- TLS 1.2 encryption in transit
+- 256-bit encryption at rest
+- Role-based access control (enterprise)
+- Exportable audit logging
+contacts:
+  support: support@reduct.video
+  privacy: privacy@reduct.video
+  sales: sales@reduct.video
+evidence:
+- source: https://reduct.video/security
+  keywords: [soc 2 type ii, gdpr, hipaa, encryption, audit logging]
