@@ -1,0 +1,51 @@
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-10-07'
+method: searched
+source: https://reduct.video/pricing/
+sources:
+- https://reduct.video/pricing/
+- https://reduct.video/pricing
+provenance:
+  tool: all/0-working/economics/harvest_pricing.py
+  run: 20261007T104522
+  grounding: every price_text was found verbatim in the fetched page text
+audience: business-product
+pricing_basis: per-seat
+delivery:
+  delivery: managed
+  method: page
+  read: '2026-10-07'
+published: true
+note: Per-editor subscription pricing with monthly/annual (save 20%) toggle; included pooled transcription
+  hours with per-minute overage cost not numerically stated.
+plan_count: 3
+currency: USD
+plans:
+- name: Personal
+  price_text: $ 12 /editor, per month
+  price: 12
+  currency: USD
+  period: month
+  unit: editor
+  included_quota: 120 hrs of included pooled transcription per year, per editor; up to 10 commenters free;
+    720p exports; unlimited storage; media file-size up to 4GB
+  overage: Any overages beyond your quota are charged a-la-carte.
+- name: Professional
+  price_text: $ 40 /editor, per month
+  price: 40
+  currency: USD
+  period: month
+  unit: editor
+  included_quota: 300 hrs of included pooled transcription per year, per editor; up to 50 commenters free;
+    2K exports; redaction; API access; media file-size up to 75GB; free 14 day trial with 5 hrs of AI
+    transcription
+  overage: Any overages beyond your quota are charged a-la-carte.
+- name: Enterprise
+  price_text: seat-based plans starting at $75/ed/mo
+  price: 75
+  currency: USD
+  period: month
+  unit: editor
+  included_quota: Everything in Professional, 4K exports, SSO, advanced access controls, SOC2 Type II,
+    DPA, MSA with SLA, priority support
+  overage: project-based, utilization based and unlimited plans also offered; Contact sales
